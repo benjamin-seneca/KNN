@@ -21,8 +21,8 @@ sns.set_theme(style="ticks")
 knn.fit(X_train, y_train)
 
 # Titres de mon fichier
-st.title('Quel iris suis-je')
-st.subheader('Choisissez vos parametres !')
+st.title('Quel iris suis-je ?')
+st.subheader('Choisissez vos paramètres !')
 
 # Sliders min - max
 longueur_sepale = st.slider("Choisissez la longueur du sépale", 4.0, 8.0)
@@ -40,7 +40,7 @@ point_en_cours = {
         "sepal_width" : [largeur_sepale],
         "petal_length" : [longueur_petale],
         "petal_width": [largeur_petale],
-        "species": "unknown"
+        "species": "votre espèce est ici"
         }
 
 
