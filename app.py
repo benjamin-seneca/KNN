@@ -20,21 +20,21 @@ sns.pairplot(data, hue = 'species')
 sns.set_theme(style="ticks")
 knn.fit(X_train, y_train)
 
-# Titre de mon fichier
+# Titres de mon fichier
 st.title('Quel iris suis-je')
 st.subheader('Choisissez vos parametres !')
 
 # Sliders min - max
-longueur_sepale = st.slider("Choisissez la longueur de la sépale", 4.0, 8.0)
-largeur_sepale = st.slider("Choisissez la largeur de la sépale", 2.0, 5.0)
-longueur_petale = st.slider("Choisissez la longueur de la pétale", 1.0, 8.0)
-largeur_petale = st.slider("Choisissez la largeur de la pétale", 0.0, 3.0)
+longueur_sepale = st.slider("Choisissez la longueur du sépale", 4.0, 8.0)
+largeur_sepale = st.slider("Choisissez la largeur du sépale", 2.0, 5.0)
+longueur_petale = st.slider("Choisissez la longueur du pétale", 1.0, 8.0)
+largeur_petale = st.slider("Choisissez la largeur du pétale", 0.0, 3.0)
 
-# Especes de l'utilisateur
+# Espece de l'utilisateur
 data_utilisateur = [longueur_sepale, largeur_sepale, longueur_petale, largeur_petale]
 espece_utilisateur = knn.predict([data_utilisateur])
 
-# choix utilisateur avec utilisation de dicotionnaire et graphique
+# choix utilisateur avec utilisation de dictionnaire et graphique
 point_en_cours = {
         'sepal_length': [longueur_sepale],
         "sepal_width" : [largeur_sepale],
