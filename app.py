@@ -37,9 +37,9 @@ espece_utilisateur = knn.predict([data_utilisateur])
 # choix utilisateur avec utilisation de dicotionnaire et graphique
 point_en_cours = {
         'sepal_length': [longueur_sepale],
-        "sepal_width" : [longueur_sepale],
+        "sepal_width" : [largeur_sepale],
         "petal_length" : [longueur_petale],
-        "petal_width": [longueur_petale],
+        "petal_width": [largeur_petale],
         "species": "unknown"
         }
 
